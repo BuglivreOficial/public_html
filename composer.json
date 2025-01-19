@@ -1,0 +1,15 @@
+{
+    "name": "bug_livre/api",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BugLivreOficial",
+            "email": "buglivreoficial@gmail.com"
+        }
+    ],
+    "require": {}
+}
