@@ -2,7 +2,7 @@
 
 require_once("./vendor/autoload.php");
 
-use Core\Router;
+use Core\Router\Router;
 
 /**
  * 
@@ -26,6 +26,7 @@ use Core\Maintenance;
  */
 Router::post('/register', 'Register@index');
 Router::post('/login', 'Login@index');
+Router::post('/reset-password', 'ResetPassword@index');
 
 /**
  * 
@@ -33,3 +34,5 @@ Router::post('/login', 'Login@index');
 
 Router::get('/update', 'Update@index');
 Router::get('/maintenance', 'Maintenance@index');
+
+Router::start();
